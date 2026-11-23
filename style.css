@@ -107,7 +107,8 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .proj { display: grid; grid-template-columns: 1.75fr 1fr; gap: 40px; align-items: start; background: var(--alt); border: 1px solid var(--line); border-radius: 28px; padding: 40px; margin-bottom: 28px; }
 .proj.flip { grid-template-columns: 1fr 1.75fr; }
 .proj.flip .shot { order: 2; }
-.proj .shot { position: sticky; top: 92px; margin: 0; }
+.proj .shot { display: grid; gap: 28px; margin: 0; }
+.proj .shot figure { margin: 0; }
 .proj .shot img { width: 100%; border-radius: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 8px 28px rgba(20, 24, 50, .10); }
 .zoom { display: block; cursor: zoom-in; border-radius: 16px; }
 .zoom:hover img { border-color: var(--accent); }
@@ -181,7 +182,7 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
   .hero-grid, .split, .proj { grid-template-columns: 1fr; gap: 28px; }
   .proj.flip { grid-template-columns: 1fr; }
   .proj.flip .shot { order: 0; }
-  .proj .shot, .split .stick { position: static; }
+  .split .stick { position: static; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .stats li:nth-child(3) { border-left: 0; padding-left: 0; }
   .stats li:nth-child(n+3) { border-top: 1px solid var(--line); }
@@ -207,4 +208,4 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
   .stats li { padding: 16px 12px; }
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
-.proj .shot figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
+.proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
