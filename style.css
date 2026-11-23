@@ -31,7 +31,7 @@ body {
 a { color: var(--accent); text-underline-offset: 3px; }
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 img { max-width: 100%; height: auto; display: block; }
-.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 1360px; margin: 0 auto; padding: 0 20px; }
 
 /* 위쪽 메뉴 */
 .top { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
@@ -104,14 +104,17 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .steps p { margin: 2px 0 0; font-size: 13.5px; color: var(--muted); line-height: 1.55; }
 
 /* 프로젝트 카드 */
-.proj { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; background: var(--alt); border: 1px solid var(--line); border-radius: 28px; padding: 40px; margin-bottom: 28px; }
+.proj { display: grid; grid-template-columns: 1.75fr 1fr; gap: 40px; align-items: start; background: var(--alt); border: 1px solid var(--line); border-radius: 28px; padding: 40px; margin-bottom: 28px; }
+.proj.flip { grid-template-columns: 1fr 1.75fr; }
 .proj.flip .shot { order: 2; }
 .proj .shot { position: sticky; top: 92px; margin: 0; }
-.proj .shot img { border-radius: 16px; border: 1px solid var(--line); background: var(--card); }
+.proj .shot img { width: 100%; border-radius: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 8px 28px rgba(20, 24, 50, .10); }
+.zoom { display: block; cursor: zoom-in; border-radius: 16px; }
+.zoom:hover img { border-color: var(--accent); }
 .proj .shot figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 0 0 14px; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .num { display: inline-grid; place-items: center; width: 34px; height: 28px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 800; }
-.proj h3 { font-size: 34px; line-height: 1.25; }
+.proj h3 { font-size: 32px; line-height: 1.25; }
 .proj .one { font-size: 17px; color: var(--muted); margin: 10px 0 20px; }
 .rows { margin: 0; border-top: 1px solid var(--line); }
 .rows > div { display: grid; grid-template-columns: 92px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); }
@@ -176,6 +179,7 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 
 @media (max-width: 960px) {
   .hero-grid, .split, .proj { grid-template-columns: 1fr; gap: 28px; }
+  .proj.flip { grid-template-columns: 1fr; }
   .proj.flip .shot { order: 0; }
   .proj .shot, .split .stick { position: static; }
   .stats { grid-template-columns: repeat(2, 1fr); }
@@ -203,3 +207,4 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
   .stats li { padding: 16px 12px; }
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
+.proj .shot figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
