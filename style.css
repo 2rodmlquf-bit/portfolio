@@ -125,11 +125,10 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .proj { display: grid; grid-template-columns: 1.75fr 1fr; gap: 40px; align-items: stretch; background: var(--alt); border: 1px solid var(--line); border-radius: 28px; padding: 40px; margin-bottom: 28px; }
 .proj.flip { grid-template-columns: 1fr 1.75fr; }
 .proj.flip .shot { order: 2; }
-/* 사진 두 장이 오른쪽 글과 같은 높이로 끝나게 나눠 채운다. 넘치는 부분은 아래쪽을 잘라 보여 주고, 누르면 원본이 열린다 */
-.proj .shot { display: flex; flex-direction: column; gap: 22px; margin: 0; }
-.proj .shot figure { margin: 0; flex: 1 1 0; min-height: 220px; display: flex; flex-direction: column; }
-.proj .shot .zoom { flex: 1 1 0; min-height: 0; display: block; }
-.proj .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top left; border-radius: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 8px 28px rgba(20, 24, 50, .10); }
+/* 사진은 자르지 않는다. 두 장을 칸의 위·아래 끝에 붙여 글 칸과 끝을 맞춘다 */
+.proj .shot { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; margin: 0; }
+.proj .shot figure { margin: 0; }
+.proj .shot img { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 8px 28px rgba(20, 24, 50, .10); }
 .zoom { display: block; cursor: zoom-in; border-radius: 16px; }
 .zoom:hover img { border-color: var(--accent); }
 .proj .shot figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
@@ -207,8 +206,6 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
   .wb-cargo > div:nth-child(n+3) { border-top: 1px dashed var(--line); }
   .proj.flip { grid-template-columns: 1fr; }
   .proj.flip .shot { order: 0; }
-  .proj .shot figure, .proj .shot .zoom { flex: none; min-height: 0; }
-  .proj .shot img { height: auto; }
   .split .stick { position: static; }
   .steps { grid-template-columns: 1fr; }
   .steps::before { top: 9px; bottom: 9px; left: 9px; right: auto; width: 2px; height: auto; }
@@ -236,4 +233,3 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
 .proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
-.proj .shot img.pos-c { object-position: center center; }
