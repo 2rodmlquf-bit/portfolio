@@ -28,7 +28,7 @@
         <p class="label">보내는 곳 · FROM</p>
         <p class="place">물류 현장 <span>블루스톤그룹 물류관리 주임 · 1년 4개월 · 재료연구원 상주</span></p>
         <h1>현장에서 겪은 불편을<br>AI와 함께 <em>업무 도구</em>로<br>만들어 보냅니다.</h1>
-        <p class="lede">MRO 물품을 검수해 연구원에게 전달하던 일에서 출발했습니다. 그때 겪은 불편을 앱으로 만들었고 부트캠프에서는 팀 프로젝트 세 개를 했습니다. 아래 숫자는 모두 기록에서 직접 셌습니다.</p>
+        <p class="lede">연구소에서 MRO 물품을 검수·전달하며 겪은 불편을 앱으로 만들었습니다.</p>
         <p class="label">받는 곳 · TO</p>
         <p class="place">업무 도구 <span>문제를 고르고 규칙을 정한 뒤 직접 눌러 확인합니다</span></p>
       </div>
@@ -58,13 +58,13 @@
     <a class="btn ghost" href="resume/%EC%9D%B4%EB%A0%A5%EC%84%9C.pdf">이력서 PDF</a>
     <a class="btn ghost" href="worklog.html">날짜별 기록</a>
   </div>
-  <p class="note">숫자는 2026년 11월 23일에 GitHub와 채점 결과 파일에서 직접 센 값입니다. 업무 시간이 얼마나 줄었는지 같은 효과는 재지 못해서 적지 않았습니다.</p>
+  <p class="note">2026년 11월 23일 GitHub 기준. 효과 수치는 재지 못했습니다.</p>
 </div></header>
 
 <section id="work" class="alt"><div class="wrap">
   <p class="eyebrow">SELECTED WORK</p>
   <h2>대표 프로젝트</h2>
-  <p class="sec-lede">기초부터 프로젝트 3까지 시간 순서입니다. 프로젝트마다 내가 한 일, AI가 한 일, 팀이 한 일을 나누고 증거를 붙였습니다. 링크가 걸린 저장소는 비공개라 권한이 있는 사람만 열립니다. 같이 만든 사람은 팀원 A·B·C로 적었습니다.</p>
+  <p class="sec-lede">시간 순서입니다. 팀원은 A·B·C로 적었습니다.</p>
 
   <div class="skills">
     <p>해 본 일과 근거</p>
@@ -90,26 +90,26 @@
     <div class="shot">
     <figure>
       <a class="zoom" href="img/p1-field.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p1-field.png" width="1400" height="773" loading="lazy" alt="현장 점검 화면: 점검이 필요한 설비와 확인할 측정값이 상태 글자와 함께 보인다"></a>
-      <figcaption>현장 점검 화면. 합성 데이터이며 실제 설비와 연결되어 있지 않습니다.</figcaption>
+      <figcaption>현장 점검 화면 (합성 데이터)</figcaption>
     </figure>
     <figure>
       <a class="zoom" href="img/p1-report.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p1-report.png" width="1400" height="782" loading="lazy" alt="모델 보고서 화면: 시험 1,500건, 고장 51건 중 41건 검출, 미탐 10건, 오탐 0건"></a>
-      <figcaption>모델 보고서 화면. 놓친 고장 10건도 함께 보여 줍니다(팀 결과, 합성 데이터).</figcaption>
+      <figcaption>모델 보고서. 놓친 10건도 표시</figcaption>
     </figure>
     </div>
     <div>
       <p class="meta"><span class="num">01</span><span class="chip c-p1">팀 프로젝트 1</span>2026.09.21 ~ 09.30 · LS Rokets</p>
       <h3>설비 상태 진단 대시보드</h3>
-      <p class="one">센서 값으로 고장을 판단하고 점검할 설비를 고르는 화면에서 상세 진단까지 잇는 웹 대시보드입니다.</p>
+      <p class="one">센서 값으로 고장을 판단하고 점검할 설비를 고르는 대시보드</p>
       <dl class="rows">
-        <div><dt>문제</dt><dd>경보가 여러 개 뜨면 무엇부터 볼지 판단하기 어려웠습니다. 화면을 옮기면 판단 근거가 이어지지 않았습니다.</dd></div>
-        <div><dt>내가 한 일</dt><dd>현장 점검·관제·상세 진단·모델 보고서 화면을 어떻게 고칠지 요구사항으로 적었습니다. 숫자와 그래프가 읽히는지 검수했습니다. 데이터베이스에 연결한 화면이 도는지도 확인했습니다. 발표와 시연 순서를 짰습니다.</dd></div>
-        <div><dt>AI가 한 일</dt><dd>Codex가 제가 준 화면 시안과 동작 조건으로 화면 초안을 만들었습니다.</dd></div>
-        <div><dt>팀이 한 일</dt><dd>팀원들이 각자 브랜치에서 대시보드를 만들고 비교한 뒤 하나로 합쳤습니다. 제 기여도는 팀 합의 값으로 25%입니다.</dd></div>
-        <div><dt>결과</dt><dd>팀 결과로 시험 1,500건에서 고장 51건 중 41건을 찾았고 잘못 울린 경보는 0건입니다. 놓친 10건도 종류별로 보고서에 적었습니다.</dd></div>
+        <div><dt>문제</dt><dd>경보가 여러 개 뜨면 무엇부터 볼지 판단하기 어려움</dd></div>
+        <div><dt>내가 한 일</dt><dd>화면 요구사항 작성, 숫자·그래프 검수, 발표</dd></div>
+        <div><dt>AI가 한 일</dt><dd>화면 초안 (Codex)</dd></div>
+        <div><dt>팀이 한 일</dt><dd>모델·서버·DB. 제 기여도 25% (팀 합의)</dd></div>
+        <div><dt>결과</dt><dd>고장 51건 중 41건 검출, 오탐 0건 (팀 결과)</dd></div>
       </dl>
       <ul class="tags"><li>Python</li><li>Dash</li><li>MySQL</li><li>합성 데이터 AI4I</li></ul>
-      <p class="changed"><b>달라진 점</b>AI가 만든 화면에서 근거가 없는 숫자를 빼 달라고 요구하기 시작했습니다.</p>
+      <p class="changed"><b>달라진 점</b>근거 없는 숫자는 화면에서 빼게 했습니다.</p>
       <div class="proof"><b>증거</b><ul>
         <li><a href="https://github.com/DH99-03/LS_Rokets/commits/%EC%B5%9C%EC%98%81%EC%99%84_test">팀 저장소의 내 작업 브랜치 커밋 기록</a></li>
         <li>시험 결과 숫자의 출처는 발표 자료와 발표 대본입니다. 저장소 밖에 있어 링크를 걸지 못했습니다.</li>
@@ -128,25 +128,25 @@
     <div class="shot">
     <figure>
       <a class="zoom" href="img/nabgi-list.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/nabgi-list.png" width="1400" height="875" loading="lazy" alt="납기 알리미 예외 목록: 지연 7건, 임박 6건이 상태 글자와 남은 일수, 안내 여부와 함께 보인다"></a>
-      <figcaption>예외 목록 화면. 주문, 공급사, 연구원은 모두 가상입니다.</figcaption>
+      <figcaption>예외 목록 (가상 데이터)</figcaption>
     </figure>
     <figure>
       <a class="zoom" href="img/nabgi-detail.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/nabgi-detail.png" width="1400" height="875" loading="lazy" alt="주문 상세 창: 연구원 안내 기록, 공급사 회신·약속일 기록, 빠른 메모"></a>
-      <figcaption>주문 상세 창. 연구원에게 안내했는지, 공급사가 언제 답했는지 여기서 남깁니다. 모두 가상 데이터입니다.</figcaption>
+      <figcaption>주문 상세. 안내·회신 기록</figcaption>
     </figure>
     </div>
     <div>
       <p class="meta"><span class="num">02</span><span class="chip c-nb">개인 프로젝트 · 대표</span>2026.10.19 ~ 10.22 (커밋 기준)</p>
       <h3>납기 알리미</h3>
-      <p class="one">늦어지는 주문만 골라 보여 주고 연구원에게 알렸는지 기록하는 Windows 앱입니다.</p>
+      <p class="one">늦어지는 주문을 골라 보여 주고 안내 여부를 기록하는 Windows 앱</p>
       <dl class="rows">
-        <div><dt>문제</dt><dd>연구원들의 불만은 늦는 것, 그리고 늦는다고 미리 알려 주지 않는 것이었습니다. 늦는 원인은 공급사 쪽이라 바꿀 수 없어서 "늦는 걸 안 때부터 알릴 때까지의 간격"을 줄이기로 했습니다.</dd></div>
-        <div><dt>내가 한 일</dt><dd>풀 문제를 현장 경험에서 골랐습니다. Claude의 질문에 답하며 요구사항을 정했습니다. 단계마다 앱을 열어 본 뒤 다음 단계를 승인했습니다.</dd></div>
-        <div><dt>AI가 한 일</dt><dd>Claude가 코드, 시험 코드, 문서 초안을 썼습니다. 앱을 실행해 확인하고 측정한 것도 Claude입니다.</dd></div>
-        <div><dt>결과</dt><dd>지연·임박 주문 목록, 안내 기록과 다시 안내 알림, 이메일·엑셀에서 납기를 읽어 사람이 확인한 뒤 반영하는 기능. 커밋 119건, 단위 시험 386개, 눌러 보는 시험 19개.</dd></div>
+        <div><dt>문제</dt><dd>납기가 늦는 것보다 미리 알리지 못하는 게 문제였음</dd></div>
+        <div><dt>내가 한 일</dt><dd>문제 선택, 요구사항 결정, 단계마다 확인·승인</dd></div>
+        <div><dt>AI가 한 일</dt><dd>코드·시험·문서 초안 (Claude)</dd></div>
+        <div><dt>결과</dt><dd>커밋 119건, 시험 386개 + 화면 시험 19개</dd></div>
       </dl>
       <ul class="tags"><li>JavaScript</li><li>Electron</li><li>Supabase (연습)</li><li>가상 데이터</li></ul>
-      <p class="changed"><b>달라진 점</b>AI가 일하는 순서와 규칙을 파일로 정해 두었습니다. 보고를 받으면 실제 상태를 열어 보게 됐습니다.</p>
+      <p class="changed"><b>달라진 점</b>AI 보고를 그대로 믿지 않고 직접 확인합니다.</p>
       <div class="proof"><b>증거</b><ul>
         <li><a href="https://github.com/2rodmlquf-bit/nabgi-alimi/commits/main">커밋 119건</a> · <a href="https://github.com/2rodmlquf-bit/nabgi-alimi/blob/main/docs/DECISIONS.md">결정 기록</a> · <a href="https://github.com/2rodmlquf-bit/nabgi-alimi/blob/main/docs/RELEASE_CHECK.md">출시 전 점검 기록</a></li>
         <li><a href="https://nabgi-alimi.vercel.app">소개 페이지</a> (공개)</li>
@@ -170,7 +170,7 @@
           <tr><td>Claude가 한 QA 46건</td><td class="num">Pass 44 · Fail 1 · No Run 1</td></tr>
           <tr><td>사람이 직접 할 QA 39건</td><td class="num">Pass 19 · Fail 1 · No Run 19</td></tr>
         </table>
-        <p class="note">사람이 직접 할 QA의 Pass 19건 가운데 4건은 Claude가 대신 확인했다고 적혀 있습니다. 절반은 아직 해 보지 못했습니다.</p>
+        <p class="note">직접 QA 절반은 아직 못 했습니다.</p>
       </div></details>
     </div>
   </article>
@@ -180,26 +180,26 @@
     <div class="shot">
     <figure>
       <a class="zoom" href="img/p2-detail.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p2-detail.png" width="1400" height="875" loading="lazy" alt="요청 상세 화면: 신청 때와 완료 때의 재고 값 비교, 신청·승인·처리 시작·완료 처리 기록"></a>
-      <figcaption>제가 만든 요청 상세 화면. 신청부터 완료까지의 처리 기록이 남습니다. 상품과 요청은 가상입니다.</figcaption>
+      <figcaption>요청 상세. 신청부터 완료까지 기록 (가상 데이터)</figcaption>
     </figure>
     <figure>
       <a class="zoom" href="img/p2-requests.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p2-requests.png" width="1400" height="875" loading="lazy" alt="내 요청 목록 화면: 요청마다 상태(완료·반려·대기)와 판정 결과가 보인다"></a>
-      <figcaption>제가 만든 "내 요청" 목록. 요청마다 상태와 신청 당시 판정이 보입니다. 상품과 요청은 가상입니다.</figcaption>
+      <figcaption>내 요청 목록</figcaption>
     </figure>
     </div>
     <div>
       <p class="meta"><span class="num">03</span><span class="chip c-p2">팀 프로젝트 2 · 3명</span>2026.10.28 ~ 10.30 (커밋 기준)</p>
       <h3>StockPilot</h3>
-      <p class="one">해외에서 들여오는 상품 중 지금 발주할 것을 걸러 보고 같은 화면에서 조치를 요청·승인하는 웹앱입니다.</p>
+      <p class="one">발주할 상품을 걸러 보고 조치를 요청·승인하는 웹앱</p>
       <dl class="rows">
-        <div><dt>문제</dt><dd>위험한 상품을 찾아도 누가 무엇을 하기로 했는지 남지 않았습니다.</dd></div>
-        <div><dt>내가 한 일</dt><dd>세 조각 중 요청·승인·관리 화면을 맡았습니다. 기능 문서를 먼저 올린 뒤에 만들었습니다. 합친 뒤에는 실제 데이터베이스로 신청부터 완료까지 직접 눌러 봤습니다. 휴대폰으로도 열어 봤습니다.</dd></div>
-        <div><dt>AI가 한 일</dt><dd>Claude가 코드와 자동 시험, QA 문서 정리를 했습니다. 코드 리뷰에서 9건을 지적했고 그중 3건을 고쳤습니다.</dd></div>
-        <div><dt>팀이 한 일</dt><dd>팀원 A는 데이터베이스와 위험 상품 화면, 전체 QA를, 팀원 B는 뼈대와 로그인, 지연 소식 화면을 맡았습니다. 인터뷰 상대는 AI가 연기한 가상 인물입니다.</dd></div>
-        <div><dt>결과</dt><dd>PR 5건(4건 합쳐짐), 리뷰 4건. 직접 눌러 보다 승인 직후 대기 건수가 그대로 남는 오류를 찾아 고쳤습니다.</dd></div>
+        <div><dt>문제</dt><dd>위험 상품을 찾아도 조치 기록이 남지 않음</dd></div>
+        <div><dt>내가 한 일</dt><dd>요청·승인·관리 화면, 실제 DB로 직접 확인</dd></div>
+        <div><dt>AI가 한 일</dt><dd>코드·시험·QA 문서 (Claude)</dd></div>
+        <div><dt>팀이 한 일</dt><dd>A: DB·위험 상품 화면 / B: 뼈대·로그인·지연 소식</dd></div>
+        <div><dt>결과</dt><dd>PR 5 · 리뷰 4. 대기 건수 오류를 찾아 고침</dd></div>
       </dl>
       <ul class="tags"><li>JavaScript</li><li>Supabase</li><li>Vercel</li><li>GitHub PR</li></ul>
-      <p class="changed"><b>달라진 점</b>혼자 만들 때와 달리 제 코드를 다른 사람이 읽고 고쳐 달라고 한 뒤에야 합쳐졌습니다. 저도 팀원의 PR을 읽고 숫자를 대조했습니다.</p>
+      <p class="changed"><b>달라진 점</b>리뷰를 받고, 팀원 PR도 읽었습니다.</p>
       <div class="proof"><b>증거</b><ul>
         <li>내가 올린 PR <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/4">#4</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/8">#8</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/14">#14</a> · 리뷰한 PR <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/3">#3</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/6">#6</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/19">#19</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project/pull/20">#20</a></li>
         <li><a href="https://github.com/2rodmlquf-bit/Project2_StockPilot/blob/main/docs/QA-5C.md">내 조각의 QA 기록</a> (Claude QA Pass 39, 직접 QA Pass 10 · No Run 2) · <a href="https://github.com/2rodmlquf-bit/Project2_StockPilot/commit/7a042ce">대기 건수를 고친 커밋</a></li>
@@ -220,28 +220,28 @@
     <div class="shot">
     <figure>
       <a class="zoom" href="img/p3-incident.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p3-incident.png" width="1600" height="826" loading="lazy" alt="알림 확인 화면: 점수가 8.0점에서 0.0점으로 떨어진 이유(폐업, 국세청)와 사람이 고르는 대응 결정 버튼"></a>
-      <figcaption>알림 확인 화면. 점수가 떨어진 이유와 출처를 보여 줍니다. 사람이 대응을 고르기 전에는 아무것도 바뀌지 않습니다. 화면은 팀원 A, 점수·사건·결정 규칙은 제가 맡았습니다.</figcaption>
+      <figcaption>알림 확인. 사람이 고르기 전에는 바뀌지 않음 (규칙은 제가, 화면은 팀원 A)</figcaption>
     </figure>
     <figure>
       <a class="zoom" href="img/p3-home.png" target="_blank" rel="noopener" aria-label="화면 크게 보기 (새 탭)"><img src="img/p3-home.png" width="1440" height="900" loading="lazy" alt="일터스텔라 첫 화면: 관심 회사 목록과 점수 하락 알림 예시"></a>
-      <figcaption>서비스 첫 화면. 관심 회사의 점수와 확인할 알림을 예시로 보여 줍니다. 두 화면 모두 이 PC에서 시연 모드(가상 데이터)로 찍었습니다.</figcaption>
+      <figcaption>서비스 첫 화면 (시연 모드)</figcaption>
     </figure>
     </div>
     <div>
       <p class="meta"><span class="num">04</span><span class="chip c-p3">팀 프로젝트 3 · 4명 · 대표</span>2026.11.18 ~ 11.23 (PR 기준)</p>
       <h3>일터스텔라</h3>
-      <p class="one">관심 회사의 위험 점수를 공식 자료(국세청·외교부·국민연금)로 매기고 새 공고가 뜨면 알려 주는 서비스입니다. 사람이 승인해야 상태가 바뀝니다.</p>
+      <p class="one">관심 회사의 위험 점수를 공식 자료로 매기고 새 공고를 알려 주는 서비스</p>
       <blockquote>"어느 한 곳에만 올리고 다른 사이트에는 안올라오는게 있어서 … 놓치는 공고들이 있더라구요."
         <footer>사람 인터뷰에서 들은 말 · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/interviews/2026-11-18-%EC%9D%B8%ED%84%B0%EB%B7%B0-%EC%A2%85%ED%95%A9.md">인터뷰 종합</a></footer>
       </blockquote>
       <dl class="rows">
-        <div><dt>내가 한 일</dt><dd>판정 규칙을 맡았습니다. 점수 계산, 사건과 알림 만들기, 사람의 결정 반영, 새 공고 규칙, 그리고 이 규칙들을 채점하는 파일입니다. 팀원이 자리를 비운 날에는 국민연금 자료를 실행 흐름에 잇는 일을 이어받았습니다.</dd></div>
-        <div><dt>AI가 한 일</dt><dd>Claude가 규칙 코드와 시험 코드를 썼습니다. 새 공고 규칙은 서브에이전트가 구현했고(시험 71 → 112개), 이때 저는 코드를 직접 읽지 않았습니다.</dd></div>
-        <div><dt>팀이 한 일</dt><dd>팀원 A는 화면을, 팀원 B는 수집·실행 흐름·서버·데이터베이스·위키와 챗봇을, 팀원 C는 문제 정의와 기획 문서, 발표 자료를 맡았습니다.</dd></div>
-        <div><dt>결과</dt><dd>PR 22건(모두 합쳐짐), 리뷰 20건. 규칙 채점 예시 23개에서 맞힌 사건 7, 놓친 사건 0, 잘못 울린 알림 0. 돌리지 못한 예시 4개는 따로 적었습니다.</dd></div>
+        <div><dt>내가 한 일</dt><dd>점수·사건·결정·새 공고 규칙과 채점 파일</dd></div>
+        <div><dt>AI가 한 일</dt><dd>규칙·시험 코드 (Claude, 서브에이전트)</dd></div>
+        <div><dt>팀이 한 일</dt><dd>A: 화면 / B: 수집·서버·DB / C: 기획·발표</dd></div>
+        <div><dt>결과</dt><dd>PR 22 · 리뷰 20. 채점 23개 중 놓친 사건 0</dd></div>
       </dl>
       <ul class="tags"><li>JavaScript</li><li>Supabase</li><li>Vercel</li><li>Claude API</li><li>공공데이터 API</li></ul>
-      <p class="changed"><b>달라진 점</b>판정이 맞는지는 채점 파일로 확인합니다. 채점이 통과해도 실제 흐름이 같은 규칙을 쓰는지 따로 확인합니다.</p>
+      <p class="changed"><b>달라진 점</b>판정이 맞는지 채점 파일로 확인합니다.</p>
       <div class="proof"><b>증거</b><ul>
         <li><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+author%3A2rodmlquf-bit">내가 올린 PR 22건</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+reviewed-by%3A2rodmlquf-bit">내가 리뷰한 PR 20건</a></li>
         <li><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/eval/results/latest.json">채점 결과 파일</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/debug-note.md">오류 기록</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/score-v2.md">점수 체계 v2</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/agents.md">서브에이전트 기록</a></li>
@@ -269,7 +269,7 @@
           <tr><th>채점한 예시</th><th>맞힌 사건</th><th>놓친 사건</th><th>잘못 울린 알림</th><th>돌리지 못한 예시</th></tr>
           <tr><td class="num">23개</td><td class="num">7건</td><td class="num">0건</td><td class="num">0건</td><td class="num">4개</td></tr>
         </table>
-        <p class="note">예시는 모두 27개입니다. 수집부터 화면까지 이어서 돌려 보지는 않았습니다.</p>
+        <p class="note">전체 27개 중 23개 채점. 규칙만 채점했습니다.</p>
       </div></details>
     </div>
   </article>
@@ -279,26 +279,26 @@
   <div class="stick">
     <p class="eyebrow">WHAT CHANGED</p>
     <h2>부트캠프 동안<br>달라진 것</h2>
-    <p class="lead-text">쓰는 도구보다 일하는 방법이 바뀌었습니다. 근거는 위 프로젝트 카드에 있습니다.</p>
+    
   </div>
   <div class="cards">
     <article class="cardx">
       <span>01</span><h3>확인하는 방법</h3>
       <p><b>처음</b>AI가 "됐다"고 하면 넘어갔습니다.</p>
       <p><b>지금</b>보고를 받으면 실제 상태를 열어 봅니다. 확인한 것과 못 한 것을 나눠 적습니다.</p>
-      <p class="why">계기: 납기 알리미에서 AI가 "올렸다"고 보고했는데 실제로는 명령이 실패해 있었습니다.</p>
+      <p class="why">계기: "올렸다"는 AI 보고가 틀렸던 일</p>
     </article>
     <article class="cardx">
       <span>02</span><h3>일을 시키는 순서</h3>
       <p><b>처음</b>화면 시안을 주고 만들어 달라고 했습니다.</p>
       <p><b>지금</b>문서와 규칙을 먼저 정하고 팀이 읽은 뒤에 만듭니다.</p>
-      <p class="why">계기: 프로젝트 2에서 기능 문서를 먼저 PR로 올렸습니다. 프로젝트 3에서는 규칙마다 번호를 붙여 시험과 맞췄습니다.</p>
+      <p class="why">계기: 프로젝트 2·3의 문서 먼저 작업</p>
     </article>
     <article class="cardx">
       <span>03</span><h3>맡는 일</h3>
       <p><b>처음</b>팀이 만든 화면의 숫자와 그래프를 검수했습니다.</p>
       <p><b>지금</b>점수와 사건을 판정하는 규칙, 그 규칙이 맞는지 채점하는 파일을 맡습니다.</p>
-      <p class="why">프로젝트 1은 검수, 프로젝트 2는 화면 한 조각, 프로젝트 3은 규칙과 채점입니다.</p>
+      <p class="why">검수 → 화면 → 규칙과 채점</p>
     </article>
   </div>
 </div></section>
@@ -308,10 +308,10 @@
   <h2>한계와 다음에 할 것</h2>
   <p class="sec-lede">아직 하지 못한 것들입니다.</p>
   <ul class="limits">
-    <li><span class="chip c-note">공통</span>네 프로젝트 모두 가상 데이터나 합성 데이터로만 확인했습니다. 실제 업무에서 써 본 적이 없고 효과를 잰 숫자도 없습니다.</li>
-    <li><span class="chip c-nb">납기 알리미</span>사람이 직접 할 QA의 절반(19건)을 아직 하지 못했습니다. 깨끗한 PC에 설치해 보는 시험도 하지 못했습니다.</li>
-    <li><span class="chip c-p3">일터스텔라</span>사용 테스트를 하지 못했습니다. 점수 체계 v2의 숫자는 가정이고 실제 회사로 검증하지 않았습니다.</li>
-    <li><span class="chip c-p2">다음에 할 것</span>코드는 대부분 AI가 썼고 저는 문제를 고르고 규칙을 정하고 결과를 확인했습니다. 앞으로는 AI가 쓴 규칙 코드를 직접 읽고 설명할 수 있는 범위를 넓히겠습니다.</li>
+    <li><span class="chip c-note">공통</span>모두 가상 데이터로만 확인했습니다.</li>
+    <li><span class="chip c-nb">납기 알리미</span>직접 QA 19건과 새 PC 설치 시험을 못 했습니다.</li>
+    <li><span class="chip c-p3">일터스텔라</span>사용 테스트를 못 했고 점수 기준은 가정입니다.</li>
+    <li><span class="chip c-p2">다음에 할 것</span>AI가 쓴 규칙 코드를 직접 읽고 설명할 수 있게 하겠습니다.</li>
   </ul>
 </div></section>
 
@@ -330,6 +330,6 @@
 </div></section>
 </main>
 
-<footer class="end"><div class="wrap">이 페이지의 화면은 모두 가상 데이터입니다. 초안은 Claude가 프로젝트 기록에서 뽑아 썼습니다. 숫자와 링크는 저장소에서 다시 확인했습니다.</div></footer>
+<footer class="end"><div class="wrap">모든 화면은 가상 데이터입니다.</div></footer>
 </body>
 </html>
