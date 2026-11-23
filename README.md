@@ -2,20 +2,19 @@
 
 부트캠프 개인 과제(포트폴리오와 이력서) 제출용 저장소입니다.
 
+**포트폴리오 바로 보기: https://2rodmlquf-bit.github.io/portfolio/**
+
 ## 어디에 무엇이 있나
 
 | 내는 것 | 위치 |
 |---|---|
-| 포트폴리오 (HTML 한 페이지) | [`index.html`](index.html) |
-| 이력서 (PDF, 2쪽) | [`resume/이력서.pdf`](resume/이력서.pdf) |
-| vibelog를 대신하는 기록 | [`worklog.html`](worklog.html) 날짜별 작업 기록. 기간 동안 vibelog에 기록하지 못해서 제출일에 커밋과 PR 기록을 날짜별로 다시 모았습니다(날마다 쓴 일지가 아닙니다) |
+| 포트폴리오 (HTML 한 페이지) | [https://2rodmlquf-bit.github.io/portfolio/](https://2rodmlquf-bit.github.io/portfolio/) (원본 [`index.html`](index.html)) |
+| 이력서 (PDF, 2쪽) | [바로 보기](https://2rodmlquf-bit.github.io/portfolio/resume/%EC%9D%B4%EB%A0%A5%EC%84%9C.pdf) (원본 [`resume/이력서.pdf`](resume/이력서.pdf)) |
+| vibelog를 대신하는 기록 | [날짜별 작업 기록](https://2rodmlquf-bit.github.io/portfolio/worklog.html) (원본 [`worklog.html`](worklog.html)). 기간 동안 vibelog에 기록하지 못해서 제출일에 커밋과 PR 기록을 날짜별로 다시 모았습니다(날마다 쓴 일지가 아닙니다) |
 
 ## 포트폴리오를 화면으로 보는 방법
 
-이 저장소는 비공개라서 GitHub에서는 HTML이 코드로 보입니다.
-
-1. 저장소 오른쪽 위 **Code → Download ZIP**으로 내려받아 압축을 풉니다.
-2. 폴더 안의 `index.html`을 더블클릭합니다. 설치나 인터넷 연결은 필요 없습니다.
+위 주소를 누르면 브라우저에서 바로 열립니다. 설치나 내려받기는 필요 없습니다.
 
 ## 담은 것
 
@@ -30,7 +29,7 @@
 ## 읽을 때 알아 둘 것
 
 - 모든 화면은 가상 데이터나 합성 데이터입니다. 효과를 잰 숫자는 없습니다.
-- 증거 링크는 비공개 저장소를 가리켜서 권한이 있는 사람만 열립니다.
+- 증거 링크 가운데 팀 저장소는 비공개라 권한이 있는 사람만 열립니다.
 - 같이 만든 사람의 이름은 적지 않고 팀원 A·B·C로 적었습니다.
 - 숫자는 2026년 11월 23일에 GitHub와 채점 결과 파일에서 센 값입니다.
 
