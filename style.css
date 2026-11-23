@@ -236,3 +236,4 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
 .proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
+.proj .shot img.pos-c { object-position: center center; }
