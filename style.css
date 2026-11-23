@@ -122,9 +122,7 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .steps p { margin: 2px 0 0; font-size: 13.5px; color: var(--muted); line-height: 1.55; }
 
 /* 프로젝트 카드 */
-.proj { display: grid; grid-template-columns: 1.75fr 1fr; gap: 40px; align-items: stretch; background: var(--alt); border: 1px solid var(--line); border-radius: 28px; padding: 40px; margin-bottom: 28px; }
-.proj.flip { grid-template-columns: 1fr 1.75fr; }
-.proj.flip .shot { order: 2; }
+.proj { margin-bottom: 28px; }
 /* 사진은 자르지 않는다. 두 장을 칸의 위·아래 끝에 붙여 글 칸과 끝을 맞춘다 */
 .proj .shot { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; margin: 0; }
 .proj .shot figure { margin: 0; }
@@ -240,4 +238,75 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
 .proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
-.proj > * { min-width: 0; }
+
+/* ===== 아래 구역도 운송장(송장) 모양으로 맞춘다: 진한 테두리, 점선 칸, 고정폭 글자 ===== */
+.eyebrow { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: .06em; }
+.barcode.sm { width: 120px; height: 26px; }
+section.alt { background: var(--alt); }
+
+/* 해 본 일 표 = 포장 목록 */
+.skills { border: 2px solid var(--ink); border-radius: 16px; padding: 0; overflow: hidden; background: var(--bg); }
+.skills > p { margin: 0; padding: 12px 24px; border-bottom: 2px solid var(--ink); font-size: 12.5px; color: var(--ink); }
+.skills dl { padding: 4px 24px; }
+.skills .row { border-top: 1px dashed var(--line); }
+
+/* 여정 줄 = 배송 추적 점선 */
+.steps::before { background: none; border-top: 2px dashed var(--line); height: 0; }
+.steps small { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+
+/* 프로젝트 카드 = 화물 송장 */
+.proj { display: block; padding: 0; background: var(--bg); border: 2px solid var(--ink); border-radius: 18px; overflow: hidden; }
+.proj-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 28px; border-bottom: 2px solid var(--ink); }
+.proj-head .meta { margin: 0; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 13px; }
+.proj-body { display: grid; grid-template-columns: 1.75fr 1fr; gap: 0; align-items: stretch; }
+.proj.flip .proj-body { grid-template-columns: 1fr 1.75fr; }
+.proj-body > .shot { padding: 30px; background: var(--alt); border-right: 1px dashed var(--line); }
+.proj-body > div:not(.shot) { padding: 30px 30px 28px; }
+.proj.flip .proj-body > .shot { order: 2; border-right: 0; border-left: 1px dashed var(--line); }
+.proj-body > * { min-width: 0; }
+.rows { border-top: 1px dashed var(--line); }
+.rows > div { border-bottom: 1px dashed var(--line); }
+.rows dt { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; letter-spacing: .02em; }
+.tags li { border-style: dashed; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; }
+.changed { background: transparent; color: var(--ink); border: 2px dashed var(--note-ink); border-radius: 12px; }
+.changed b { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; color: var(--note-ink); }
+
+/* 달라진 것 = 접수증 */
+.cardx { border: 2px solid var(--ink); border-radius: 14px; background: var(--bg); }
+.cardx > span { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.cardx p b { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; }
+
+/* 한계 = 검수 메모 */
+.limits li { border: 2px solid var(--ink); border-radius: 14px; background: var(--bg); position: relative; padding-left: 58px; }
+.limits li::before { content: ""; position: absolute; left: 22px; top: 25px; width: 16px; height: 16px; border: 2px solid var(--ink); border-radius: 3px; }
+.limits li .chip { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 11.5px; }
+
+/* 연락 = 인수 확인 영수증 */
+.contact-box { display: block; padding: 0; background: var(--bg); color: var(--ink); border: 2px solid var(--ink); border-radius: 18px; overflow: hidden; }
+.contact-box .wb-head { padding: 14px 28px; }
+.contact-box h2 { color: var(--ink); margin-bottom: 10px; }
+.cb-body { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; padding: 28px; }
+.cb-list { margin: 0; display: grid; gap: 6px; }
+.cb-list > div { display: grid; grid-template-columns: 80px 1fr; }
+.cb-list dt { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; color: var(--muted); padding-top: 3px; }
+.cb-list dd { margin: 0; font-weight: 600; }
+.contact-box .btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.contact-box .btn.ghost { background: var(--bg); color: var(--ink); border-color: var(--line); }
+.cb-sign { display: flex; align-items: center; gap: 14px; margin: 0; padding: 14px 28px 20px; border-top: 1px dashed var(--line); }
+.cb-sign .mono { font-size: 12px; font-weight: 700; color: var(--accent); white-space: nowrap; }
+.cb-sign .line { flex: 1; border-bottom: 1px solid var(--muted); height: 18px; max-width: 320px; }
+
+@media (max-width: 960px) {
+  .proj-body, .proj.flip .proj-body { grid-template-columns: 1fr; }
+  .proj.flip .proj-body > .shot { order: 0; border-left: 0; }
+  .proj-body > .shot { border-right: 0; border-bottom: 1px dashed var(--line); }
+  .cb-body { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .proj-head { padding: 10px 16px; } .barcode.sm { width: 70px; }
+  .proj-body > .shot, .proj-body > div:not(.shot) { padding: 18px; }
+  .skills > p, .skills dl { padding-left: 16px; padding-right: 16px; }
+  .cb-body, .contact-box .wb-head, .cb-sign { padding-left: 18px; padding-right: 18px; }
+}
+.contact-box p { color: inherit; opacity: 1; }
+.contact-box .wb-head p { font-size: 14px; font-weight: 700; }
