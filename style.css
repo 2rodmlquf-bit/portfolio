@@ -133,7 +133,7 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .zoom:hover img { border-color: var(--accent); }
 .proj .shot figcaption { font-size: 13px; color: var(--muted); margin-top: 10px; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin: 0 0 14px; font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.num { display: inline-grid; place-items: center; width: 34px; height: 28px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 800; }
+.meta .num { display: inline-grid; place-items: center; width: 34px; height: 28px; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: 13px; font-weight: 800; }
 .proj h3 { font-size: 32px; line-height: 1.25; }
 .proj .one { font-size: 17px; color: var(--muted); margin: 10px 0 20px; }
 .rows { margin: 0; border-top: 1px solid var(--line); }
@@ -159,10 +159,16 @@ ul.plain li { margin: 5px 0; }
 blockquote { margin: 0 0 20px; padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--bg); border-radius: 0 14px 14px 0; font-size: 15.5px; }
 blockquote footer { font-size: 13px; color: var(--muted); margin-top: 4px; }
 
-table { width: 100%; border-collapse: collapse; font-size: 14.5px; display: block; overflow-x: auto; }
-th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; min-width: 100px; }
-th { background: var(--bg); white-space: nowrap; }
+/* 표: 바깥 테두리만 둥글게, 안쪽은 가로줄만 */
+table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 14.5px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+th, td { padding: 11px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+tr:last-child td { border-bottom: 0; }
+th { background: var(--alt); white-space: nowrap; font-size: 13px; font-weight: 700; color: var(--muted); }
+td:first-child { font-weight: 700; color: var(--ink); min-width: 84px; }
+td { color: var(--sub); }
 td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.num a { display: inline-block; margin: 0 4px 4px 0; padding: 1px 10px; border-radius: 999px; background: var(--alt); border: 1px solid var(--line); font-size: 13px; font-weight: 700; text-decoration: none; }
+td.num a:hover { border-color: var(--accent); }
 
 /* 달라진 것 */
 .split { display: grid; grid-template-columns: 1fr 1.25fr; gap: 56px; align-items: start; }
@@ -213,6 +219,7 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
   .contact-box { grid-template-columns: 1fr; }
 }
 @media (max-width: 620px) {
+  table { display: block; overflow-x: auto; }
   section { padding: 64px 0; }
   .hero { padding-top: 40px; }
   .hero h1 { font-size: 30px; }
@@ -233,3 +240,4 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 }
 @media print { .top { position: static; } .top button { display: none; } details.more > div { display: block; } }
 .proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
+.proj > * { min-width: 0; }
