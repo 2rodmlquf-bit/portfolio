@@ -310,3 +310,52 @@ section.alt { background: var(--alt); }
 }
 .contact-box p { color: inherit; opacity: 1; }
 .contact-box .wb-head p { font-size: 14px; font-weight: 700; }
+
+/* ===== 움직임 (motion.js가 html에 motion을 붙였을 때만. 동작 줄이기를 켠 사람에게는 없음) ===== */
+.top { position: sticky; }
+.read-bar { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: left center; pointer-events: none; }
+.top a.is-active { background: var(--alt); color: var(--ink); }
+.motion .rv { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); }
+.motion .rv.is-in { opacity: 1; transform: none; }
+/* 운송 기록 점이 차례로 찍힌다 */
+.motion .waybill .track li { opacity: 0; transform: translateX(-8px); transition: opacity .45s ease, transform .45s ease; }
+.motion .waybill.is-in .track li { opacity: 1; transform: none; }
+.motion .waybill.is-in .track li:nth-child(1) { transition-delay: .25s; }
+.motion .waybill.is-in .track li:nth-child(2) { transition-delay: .4s; }
+.motion .waybill.is-in .track li:nth-child(3) { transition-delay: .55s; }
+.motion .waybill.is-in .track li:nth-child(4) { transition-delay: .7s; }
+.motion .waybill.is-in .track li:nth-child(5) { transition-delay: .85s; }
+/* 지금 단계 점이 천천히 깜빡인다 */
+.motion .track .now::after { content: ""; position: absolute; left: -3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--p3-ink); animation: ping 2.2s ease-out infinite; }
+@keyframes ping { 0% { transform: scale(1); opacity: .7; } 80%, 100% { transform: scale(2.2); opacity: 0; } }
+/* 바코드를 한 번 훑는 빛 */
+.motion .wb-head { position: relative; overflow: hidden; }
+.motion .waybill.is-in .wb-head::after { content: ""; position: absolute; top: 0; bottom: 0; width: 3px; right: 200px; background: var(--accent); opacity: 0; animation: scan 1.4s ease .3s 1; }
+@keyframes scan { 0% { opacity: .9; transform: translateX(0); } 100% { opacity: 0; transform: translateX(190px); } }
+/* 달라진 점 도장이 찍히듯 */
+.motion .proj .changed { transform: scale(1.06) rotate(-1deg); opacity: 0; transition: transform .35s cubic-bezier(.3,1.6,.5,1) .35s, opacity .2s ease .35s; }
+.motion .proj.is-in .changed { transform: none; opacity: 1; }
+/* 카드와 사진에 손을 올리면 */
+.proj, .cardx, .limits li, .skills { transition: box-shadow .2s ease, transform .2s ease; }
+.proj:hover, .cardx:hover { box-shadow: 6px 6px 0 var(--ink); transform: translate(-2px, -2px); }
+.motion .proj.rv.is-in:hover, .motion .cardx.rv.is-in:hover { transform: translate(-2px, -2px); }
+.zoom img { transition: transform .3s ease; }
+.zoom:hover img { transform: scale(1.015); }
+.skills .row { transition: background .15s ease; }
+.skills .row:hover { background: var(--alt); }
+.btn { transition: transform .15s ease, filter .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) {
+  .proj:hover, .cardx:hover, .btn:hover, .zoom:hover img { transform: none; }
+  .motion .track .now::after { animation: none; display: none; }
+}
+/* 날짜별 기록 표는 휴대폰에서 칸을 위아래로 쌓는다(가운데 칸이 한 글자 폭으로 좁아지지 않게) */
+@media (max-width: 620px) {
+  table.log { display: block; overflow: visible; }
+  table.log tbody, table.log tr, table.log td { display: block; }
+  table.log tr:first-child { display: none; }
+  table.log tr { padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  table.log tr:last-child { border-bottom: 0; }
+  table.log td { border: 0; padding: 2px 0; min-width: 0; }
+  table.log td:last-child { font-size: 13px; }
+}
