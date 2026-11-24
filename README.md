@@ -41,6 +41,7 @@ index.html    포트폴리오
 worklog.html  날짜별 작업 기록
 style.css     색과 배치 (라이트·다크)
 theme.js      밝게/어둡게 보기 단추
-img/          프로젝트 화면 캡처 8장
+motion.js     스크롤 움직임
+img/          프로젝트 화면 캡처 8장(WebP), 링크 미리보기 그림
 resume/       이력서 PDF
 ```

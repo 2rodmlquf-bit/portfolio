@@ -1,5 +1,6 @@
 /* 색은 여기 한 곳에서만 정한다. 그라데이션은 쓰지 않는다. 바탕은 흰색·연한 회청색, 강조는 남색 하나, 프로젝트 표시는 파스텔 칩. */
 :root {
+  color-scheme: light;
   --bg: #ffffff; --alt: #f5f6fa; --card: #ffffff; --ink: #161a2b; --sub: #3c4257; --muted: #6a7088; --line: #e4e7ef;
   --accent: #3f4cc9; --on-accent: #ffffff;
   --p1: #fde6d8; --p1-ink: #8a3b12; --nb: #ebe6fc; --nb-ink: #46379a; --p2: #dcf2e6; --p2-ink: #1e6647; --p3: #dfedfb; --p3-ink: #1d5687;
@@ -7,6 +8,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #12141d; --alt: #181b27; --card: #1d2130; --ink: #eef0f7; --sub: #c9cde0; --muted: #9da3bb; --line: #2c3144;
     --accent: #9ea8ff; --on-accent: #12141d;
     --p1: #45291c; --p1-ink: #ffd3bc; --nb: #2d2754; --nb-ink: #d3ccff; --p2: #173a2b; --p2-ink: #b5e8cf; --p3: #17324b; --p3-ink: #bcdcf7;
@@ -14,6 +16,7 @@
   }
 }
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #12141d; --alt: #181b27; --card: #1d2130; --ink: #eef0f7; --sub: #c9cde0; --muted: #9da3bb; --line: #2c3144;
   --accent: #9ea8ff; --on-accent: #12141d;
   --p1: #45291c; --p1-ink: #ffd3bc; --nb: #2d2754; --nb-ink: #d3ccff; --p2: #173a2b; --p2-ink: #b5e8cf; --p3: #17324b; --p3-ink: #bcdcf7;
@@ -326,7 +329,7 @@ section.alt { background: var(--alt); }
 .motion .waybill.is-in .track li:nth-child(4) { transition-delay: .7s; }
 .motion .waybill.is-in .track li:nth-child(5) { transition-delay: .85s; }
 /* 지금 단계 점이 천천히 깜빡인다 */
-.motion .track .now::after { content: ""; position: absolute; left: -3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--p3-ink); animation: ping 2.2s ease-out infinite; }
+.motion .track .now::after { content: ""; position: absolute; left: -3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; border: 3px solid var(--p3-ink); animation: ping 2.2s ease-out 4; }
 @keyframes ping { 0% { transform: scale(1); opacity: .7; } 80%, 100% { transform: scale(2.2); opacity: 0; } }
 /* 바코드를 한 번 훑는 빛 */
 .motion .wb-head { position: relative; overflow: hidden; }
@@ -359,3 +362,10 @@ section.alt { background: var(--alt); }
   table.log td { border: 0; padding: 2px 0; min-width: 0; }
   table.log td:last-child { font-size: 13px; }
 }
+
+/* 점검 반영: 건너뛰기 링크, 제목 줄바꿈, 터치 */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 20; padding: 10px 16px; border-radius: 10px; background: var(--ink); color: var(--bg); font-weight: 700; text-decoration: none; transition: top .15s ease; }
+.skip-link:focus { top: 12px; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+html { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
