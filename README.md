@@ -17,7 +17,7 @@
 | 01 | 설비 상태 진단 대시보드 | 팀 프로젝트 1 · 2026.09.21 ~ 09.30 | 화면 요구사항, 숫자·그래프 검수, 발표 | [바로가기](https://2rodmlquf-bit.github.io/portfolio/#p1) |
 | 02 | 납기 알리미 | 개인 프로젝트 · 2026.10.19 ~ 10.22 | 문제 고르기, 요구사항 결정, 단계마다 확인 | [바로가기](https://2rodmlquf-bit.github.io/portfolio/#nabgi) |
 | 03 | StockPilot | 팀 프로젝트 2 (3명) · 2026.10.28 ~ 10.30 | 요청·승인·관리 화면 | [바로가기](https://2rodmlquf-bit.github.io/portfolio/#p2) |
-| 04 | 일터스텔라 | 팀 프로젝트 3 (4명) · 2026.11.18 ~ 11.23 | 점수·사건·결정·새 공고 규칙과 채점 파일 | [바로가기](https://2rodmlquf-bit.github.io/portfolio/#p3) |
+| 04 | 일터스텔라 | 팀 프로젝트 3 (4명) · 2026.11.18 ~ 11.23 | 점수·사건·결정·새 공고 규칙(중심), 공식 자료 수집 연결, 기록 찾기·관리자 화면, 채점 파일 | [바로가기](https://2rodmlquf-bit.github.io/portfolio/#p3) |
 
 ## 증거 링크 (저장소)
 
