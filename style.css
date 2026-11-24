@@ -63,7 +63,7 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 
 /* 첫 화면: 물류 운송장(송장) 모양. 칸을 나눈 선과 고정폭 글자로 표현하고 색 번짐은 쓰지 않는다 */
 .hero { padding: 56px 0; }
-.mono { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: .04em; }
+.mono { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; letter-spacing: .04em; }
 .waybill { border: 2px solid var(--ink); border-radius: 18px; background: var(--bg); overflow: hidden; }
 .wb-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 28px; border-bottom: 2px solid var(--ink); }
 .wb-head p { margin: 0; font-size: 14px; font-weight: 700; }
@@ -72,7 +72,7 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .wb-main { display: grid; grid-template-columns: 1.55fr 1fr; }
 .wb-from { padding: 32px 36px 30px 28px; border-right: 1px dashed var(--line); }
 .wb-track { padding: 32px 28px 28px; background: var(--alt); }
-.label { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--accent); font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.label { margin: 0 0 6px; font-size: 12px; font-weight: 700; letter-spacing: .08em; color: var(--accent); font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
 .place { margin: 0 0 22px; font-size: 20px; font-weight: 800; letter-spacing: -0.02em; }
 .place span { display: block; font-size: 14px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
 .hero h1 { font-size: 50px; line-height: 1.25; letter-spacing: -0.04em; margin: 4px 0 18px; font-weight: 800; padding-top: 22px; border-top: 1px dashed var(--line); }
@@ -84,7 +84,7 @@ h4 { font-size: 15px; margin: 22px 0 8px; }
 .track li:last-child { padding-bottom: 0; }
 .track li::before { content: ""; position: absolute; left: -3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--dot, var(--muted)); border: 3px solid var(--alt); }
 .track .t-p1 { --dot: var(--p1-ink); } .track .t-nb { --dot: var(--nb-ink); } .track .t-p2 { --dot: var(--p2-ink); } .track .t-p3 { --dot: var(--p3-ink); }
-.track time { display: block; font-size: 12.5px; color: var(--muted); font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.track time { display: block; font-size: 12.5px; color: var(--muted); font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
 .track b, .track a { display: block; font-weight: 700; color: var(--ink); text-decoration: none; line-height: 1.45; }
 .track a:hover { color: var(--accent); }
 .track span { display: block; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
@@ -240,7 +240,7 @@ table.log td:last-child { min-width: 150px; color: var(--muted); white-space: no
 .proj .shot figure:last-child figcaption::after { content: " 사진을 누르면 크게 봅니다."; }
 
 /* ===== 아래 구역도 운송장(송장) 모양으로 맞춘다: 진한 테두리, 점선 칸, 고정폭 글자 ===== */
-.eyebrow { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: .06em; }
+.eyebrow { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; letter-spacing: .06em; }
 .barcode.sm { width: 120px; height: 26px; }
 section.alt { background: var(--alt); }
 
@@ -252,12 +252,12 @@ section.alt { background: var(--alt); }
 
 /* 여정 줄 = 배송 추적 점선 */
 .steps::before { background: none; border-top: 2px dashed var(--line); height: 0; }
-.steps small { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.steps small { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
 
 /* 프로젝트 카드 = 화물 송장 */
 .proj { display: block; padding: 0; background: var(--bg); border: 2px solid var(--ink); border-radius: 18px; overflow: hidden; }
 .proj-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 28px; border-bottom: 2px solid var(--ink); }
-.proj-head .meta { margin: 0; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 13px; }
+.proj-head .meta { margin: 0; font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 13px; }
 .proj-body { display: grid; grid-template-columns: 1.75fr 1fr; gap: 0; align-items: stretch; }
 .proj.flip .proj-body { grid-template-columns: 1fr 1.75fr; }
 .proj-body > .shot { padding: 30px; background: var(--alt); border-right: 1px dashed var(--line); }
@@ -266,20 +266,20 @@ section.alt { background: var(--alt); }
 .proj-body > * { min-width: 0; }
 .rows { border-top: 1px dashed var(--line); }
 .rows > div { border-bottom: 1px dashed var(--line); }
-.rows dt { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; letter-spacing: .02em; }
-.tags li { border-style: dashed; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; }
+.rows dt { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 12.5px; letter-spacing: .02em; }
+.tags li { border-style: dashed; font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 12px; }
 .changed { background: transparent; color: var(--ink); border: 2px dashed var(--note-ink); border-radius: 12px; }
-.changed b { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; color: var(--note-ink); }
+.changed b { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 12.5px; color: var(--note-ink); }
 
 /* 달라진 것 = 접수증 */
 .cardx { border: 2px solid var(--ink); border-radius: 14px; background: var(--bg); }
-.cardx > span { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
-.cardx p b { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; }
+.cardx > span { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+.cardx p b { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 12px; }
 
 /* 한계 = 검수 메모 */
 .limits li { border: 2px solid var(--ink); border-radius: 14px; background: var(--bg); position: relative; padding-left: 58px; }
 .limits li::before { content: ""; position: absolute; left: 22px; top: 25px; width: 16px; height: 16px; border: 2px solid var(--ink); border-radius: 3px; }
-.limits li .chip { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 11.5px; }
+.limits li .chip { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 11.5px; }
 
 /* 연락 = 인수 확인 영수증 */
 .contact-box { display: block; padding: 0; background: var(--bg); color: var(--ink); border: 2px solid var(--ink); border-radius: 18px; overflow: hidden; }
@@ -288,7 +288,7 @@ section.alt { background: var(--alt); }
 .cb-body { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; padding: 28px; }
 .cb-list { margin: 0; display: grid; gap: 6px; }
 .cb-list > div { display: grid; grid-template-columns: 80px 1fr; }
-.cb-list dt { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12.5px; color: var(--muted); padding-top: 3px; }
+.cb-list dt { font-family: ui-monospace, "Cascadia Mono", Consolas, "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 12.5px; color: var(--muted); padding-top: 3px; }
 .cb-list dd { margin: 0; font-weight: 600; }
 .contact-box .btn { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .contact-box .btn.ghost { background: var(--bg); color: var(--ink); border-color: var(--line); }
