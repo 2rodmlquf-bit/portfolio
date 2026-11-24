@@ -258,12 +258,12 @@
         <div><dt>내가 한 일</dt><dd>점수·사건·결정·새 공고 규칙과 채점 파일</dd></div>
         <div><dt>AI가 한 일</dt><dd>규칙·시험 코드 (Claude). 서브에이전트가 짠 코드는 직접 읽지 못함</dd></div>
         <div><dt>팀이 한 일</dt><dd>A: 화면 / B: 수집·서버·DB / C: 기획·발표</dd></div>
-        <div><dt>결과</dt><dd>PR 22 · 리뷰 20. 채점 23개 중 놓친 사건 0</dd></div>
+        <div><dt>결과</dt><dd>PR 22 · 리뷰 21. 채점 23개 중 놓친 사건 0</dd></div>
       </dl>
       <ul class="tags"><li>JavaScript</li><li>Supabase</li><li>Vercel</li><li>Claude API</li><li>공공데이터 API</li></ul>
       <p class="changed"><b>달라진 점</b>판정이 맞는지 채점 파일로 확인합니다.</p>
       <div class="proof"><b>증거</b><ul>
-        <li><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+author%3A2rodmlquf-bit">내가 올린 PR 22건</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+reviewed-by%3A2rodmlquf-bit">내가 리뷰한 PR 20건</a></li>
+        <li><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+author%3A2rodmlquf-bit">내가 올린 PR 22건</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+reviewed-by%3A2rodmlquf-bit">내가 리뷰한 PR 21건</a></li>
         <li><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/eval/results/latest.json">채점 결과 파일</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/debug-note.md">오류 기록</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/score-v2.md">점수 체계 v2</a> · <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/docs/agents.md">서브에이전트 기록</a></li>
       </ul></div>
       <details class="more"><summary>주요 PR · 막힌 일 · 채점표</summary><div>
@@ -275,14 +275,16 @@
           <tr><td>채점</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/8">#8</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/21">#21</a></td><td>처음 조회할 때의 기준 점수, 채점 파일, 채점 예시 추가</td></tr>
           <tr><td>새 공고</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/12">#12</a></td><td>회사 이름 정리, 공고와 회사 맞추기, 같은 공고 묶기</td></tr>
           <tr><td>국민연금</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/18">#18</a></td><td>실행 흐름에 연결. 이미 저장한 달은 다시 부르지 않게 함</td></tr>
-          <tr><td>점수 체계 v2</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/62">#62</a></td><td>시작 점수 8.0, 가점, 고용 변화 반영</td></tr>
+          <tr><td>점수 체계 v2</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/55">#55</a> <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/62">#62</a></td><td>세부 규칙 13개와 고른 이유를 먼저 문서로 정하고 구현. 시작 점수 8.0, 가점, 고용 변화, 기사 배수</td></tr>
+          <tr><td>배포 주소 이전</td><td class="num"><a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/69">#69</a></td><td>원래 배포가 하루 한도에 걸려 새 Vercel 프로젝트로 옮기고, 파일 192개를 main과 대조해 확인</td></tr>
         </table>
         <h4>막힌 일과 푼 방법</h4>
         <ul class="plain">
           <li><b>채점은 통과하는데 실제 흐름은 틀린 경우.</b> 처음 조회에 실패한 회사는 기준 점수가 없어서 나중에 폐업해도 사건이 생기지 않았습니다. 채점은 기준 점수 규칙을 쓰는데 실행 흐름은 그 규칙을 부르지 않아서 채점에서는 드러나지 않았습니다. 제가 찾아 알렸습니다. 팀원 B가 <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/10">PR #10</a>에서 두 곳이 같은 규칙을 쓰게 고쳤습니다.</li>
           <li><b>공공데이터 열쇠의 모양.</b> 같은 열쇠를 네 가지 모양으로 불러 보니 한 가지만 국세청과 외교부에서 모두 읽혔습니다. <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/31">PR #31</a>로 어느 모양을 넣어도 읽히게 고쳤습니다. 배포 서버에서 읽히는 것은 팀원의 보고로만 알고 직접 보지는 못했습니다.</li>
           <li><b>내 규칙의 구멍을 팀원이 잡음.</b> <a href="https://github.com/jhk4308/LS-VibeCoding-Project2/pull/16">PR #16</a>의 “목록에 없는 나라는 경보 없음” 규칙은 응답이 0건이면 모든 나라를 안전하다고 판단합니다. 팀원 B가 리뷰에서 직접 일으켜 보여 줬습니다.</li>
-          <li><b>점수 체계를 바꾼 이유.</b> 국내 회사는 재료가 국세청 하나뿐이라 점수가 10.0, 5.0, 0.0 셋밖에 나오지 않았습니다. 11월 23일 팀 회의에서 점수 체계 v2로 바꾸기로 했습니다. 버린 안과 이유는 문서에 남겼습니다. 점수는 코드가 매기고 AI는 자료를 분류하는 데까지만 씁니다.</li>
+          <li><b>점수 체계를 바꾼 이유.</b> 국내 회사는 재료가 국세청 하나뿐이라 점수가 10.0, 5.0, 0.0 셋밖에 나오지 않았습니다. 11월 23일 팀 회의에서 점수 체계 v2로 바꾸기로 했습니다. 8.0에서 시작해 기사는 크기·언론사 수·최신성(90일 그대로, 180일까지 절반)을 곱해 0.1점 단위로 갈리게 했고, 같은 일은 한 번만 셉니다. 버린 안과 이유는 문서에 남겼습니다. 점수는 코드가 매기고 AI는 자료를 분류하는 데까지만 씁니다.</li>
+          <li><b>비슷한 방식과 견줌.</b> 규칙을 정한 뒤 기업 위험 점수인 RepRisk 지수와 MSCI ESG 논란 점수를 찾아봤습니다. 둘 다 사건의 심각도·출처·최근성을 봐서 방향이 같았습니다. 다만 투자자용이고 계산식이 공개되지 않아, 숫자는 구직자에 맞게 따로 정했습니다.</li>
         </ul>
         <h4>채점표 (2026년 11월 23일, 규칙만 채점)</h4>
         <table>

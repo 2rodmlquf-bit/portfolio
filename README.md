@@ -26,7 +26,7 @@
 | 납기 알리미 | [커밋 119건](https://github.com/2rodmlquf-bit/nabgi-alimi/commits/main) · [소개 페이지](https://nabgi-alimi.vercel.app) | 저장소 비공개 · 소개 페이지 공개 |
 | 팀 프로젝트 1 | [내 작업 브랜치 커밋](https://github.com/DH99-03/LS_Rokets/commits/%EC%B5%9C%EC%98%81%EC%99%84_test) | 비공개 (팀 저장소) |
 | 팀 프로젝트 2 | [내가 올린 PR](https://github.com/jhk4308/LS-VibeCoding-Project/pulls?q=is%3Apr+author%3A2rodmlquf-bit) · [내 조각의 QA 기록](https://github.com/2rodmlquf-bit/Project2_StockPilot/blob/main/docs/QA-5C.md) | 비공개 (팀 저장소 · 개인 보관 사본) |
-| 팀 프로젝트 3 | [내가 올린 PR 22건](https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+author%3A2rodmlquf-bit) · [내가 리뷰한 PR 20건](https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+reviewed-by%3A2rodmlquf-bit) · [채점 결과](https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/eval/results/latest.json) | 비공개 (팀 저장소) |
+| 팀 프로젝트 3 | [내가 올린 PR 22건](https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+author%3A2rodmlquf-bit) · [내가 리뷰한 PR 21건](https://github.com/jhk4308/LS-VibeCoding-Project2/pulls?q=is%3Apr+reviewed-by%3A2rodmlquf-bit) · [채점 결과](https://github.com/jhk4308/LS-VibeCoding-Project2/blob/main/eval/results/latest.json) · [개인 보관 사본](https://github.com/2rodmlquf-bit/Project3_Ilterstella) | 비공개 (팀 저장소 · 개인 보관 사본) |
 
 ## 참고
 
